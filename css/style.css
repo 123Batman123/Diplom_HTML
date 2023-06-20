@@ -842,7 +842,7 @@ a.capital {
 
 @media (min-width: 761px) and (max-width: 1199px) {
 
-    .product-block {
+  .product-block {
     width: calc(50% - 10px);
   }
 }
@@ -1078,4 +1078,37 @@ a.capital {
     display: none;
   }
 
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+  .trends {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .trend-wrapper {
+    width: 49.5%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+  .trends {
+    flex-wrap: nowrap;
+  }
+
+  .trend-wrapper:nth-child(2n + 3) {
+    margin-left: 4px;
+  }
+
+  .trend-wrapper {
+    width: calc(100% / 4);
+  }
+
+  .trend-card {
+    padding: 10%;
+  }
+
+  .trend-title-link {
+    font-size: 70%;
+  }
 }
